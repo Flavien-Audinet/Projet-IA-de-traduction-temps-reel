@@ -1,0 +1,98 @@
+- connais tu une ia qui est capable de detecter du text sur l'image en temps reel ?
+
+- Oui, il existe une IA capable de détecter du texte sur une image en temps réel. Le détecteur OCR (Optical Character Recognition) peut surveiller des régions prédéfinies sur le flux de votre caméra et détecter du texte en temps réel. Pour obtenir des résultats reproductibles, il est important d'avoir un environnement de lecture cohérent et très bien éclairé, et de placer la caméra près de l'endroit où le texte doit apparaître.
+
+- fait moi une ia ocr temps reel qui record l'ecran
+
+
+- Pour créer une IA OCR en temps réel qui enregistre l'écran, vous pouvez utiliser les technologies suivantes :
+
+    Tesseract OCR : C'est un outil d'OCR open-source développé par Google. Il est capable de reconnaître le texte dans des images et des vidéos. Vous pouvez l'intégrer dans votre application pour extraire le texte de l'écran en temps réel.
+    OpenCV : C'est une bibliothèque de traitement d'image et de vision par ordinateur. Vous pouvez utiliser OpenCV pour capturer l'écran et pré-traiter les images avant de les passer à Tesseract OCR pour la reconnaissance de texte.
+    Python : Vous pouvez utiliser Python comme langage de programmation pour intégrer Tesseract OCR et OpenCV. Python offre une grande flexibilité et des bibliothèques telles que pytesseract et opencv-python pour faciliter l'intégration de ces technologies.
+
+Voici un exemple de code Python pour enregistrer l'écran et extraire le texte en temps réel :
+
+python
+import cv2
+import pytesseract
+import numpy as np
+
+# Définir le chemin vers l'exécutable Tesseract OCR
+pytesseract.pytesseract.tesseract_cmd = 'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'
+
+# Ouvrir la capture d'écran
+cap = cv2.VideoCapture(0)
+
+while True:
+    # Lire une frame de l'écran
+    ret, frame = cap.read()
+    
+    # Convertir la frame en gris pour améliorer la reconnaissance de texte
+    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+    
+    # Appliquer un seuil pour améliorer la qualité de l'image
+    ret, thresh = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)
+    
+    # Extraire le texte de l'image
+    text = pytesseract.image_to_string(thresh, lang='fra', config='--psm 11')
+    
+    # Afficher le texte extrait
+    print(text)
+    
+    # Afficher la frame avec le texte extrait
+    cv2.imshow('Screen', frame)
+    
+    # Attendre une touche pour quitter
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        break
+
+# Fermer la capture d'écran
+cap.release()
+cv2.destroyAllWindows()
+
+Ce code capture l'écran, convertit chaque frame en gris, applique un seuil pour améliorer la qualité de l'image, puis utilise Tesseract OCR pour extraire le texte. Le texte extrait est affiché à l'écran. Vous pouvez ajuster les paramètres de Tesseract OCR et de OpenCV pour améliorer la précision de la reconnaissance de texte. Pour enregistrer l'écran, vous pouvez utiliser des bibliothèques comme pyautogui ou mss pour capturer l'écran et opencv-python pour enregistrer les frames en vidéo.
+
+python
+import pyautogui
+import cv2
+import numpy as np
+
+# Définir le codec de la vidéo
+fourcc = cv2.VideoWriter_fourcc(*'XVID')
+
+# Définir les dimensions de la vidéo
+screen_width, screen_height = pyautogui.size()
+
+# Ouvrir la capture d'écran
+out = cv2.VideoWriter("output.avi", fourcc, 5.0, (screen_width, screen_height))
+
+while True:
+    # Capturer l'écran
+    img = pyautogui.screenshot()
+    
+    # Convertir l'image en format OpenCV
+    frame = np.array(img)
+    frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+    
+    # Écrire la frame dans la vidéo
+    out.write(frame)
+    
+    # Attendre une touche pour quitter
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        break
+
+# Fermer la capture d'écran
+out.release()
+cv2.destroyAllWindows()
+
+Ce code capture l'écran et enregistre les frames dans une vidéo. Vous pouvez ajuster les paramètres de la vidéo pour répondre à vos besoins spécifiques. En combinant ces technologies, vous pouvez créer une IA OCR en temps réel qui enregistre l'écran et extrait le texte.
+1.32
+sec to first token
+64
+tokens/sec
+944
+tokens
+14.67
+sec
+
