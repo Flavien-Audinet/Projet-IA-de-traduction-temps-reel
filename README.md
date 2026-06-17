@@ -1,15 +1,10 @@
 # Projet-IA-de-traduction-temps-reel
-IA de traduction temps reel avec deepfake audio et reconstruction dynamique des textes
+Projet : IA de traduction temps réel avec deepfake audio et reconstruction dynamique des textes
+Traduction instantanée avec clonage vocal (voix d’utilisateurs, vidéos, audios, jeux, films) : restitution dans la langue cible avec accents et expressions naturelles.
+Reconstruction dynamique des textes : adaptation du contenu, de la police, des couleurs et de la mise en forme en fonction du support et de l’angle de vue.
 
-Projet en cours de developpement toute copie est proscrite et pourrais engendrer des poursuite judiciaire
-
-IA de traduction temps reel qui pourra copier les voix des utilisateurs, des videos, des audio, des jeux ou de films pour faire une traduction dans la langue souhaite avec les bon accents et bonne expression
-
-le texte pourra etre remplacer ou reconstruit dynamiquement en fonction du support et de l'angle avec la meme police et couleur en fonction du support
-
-et encore d'autre systeme plus avance que je ne souhaite pas partager
-
-le code-source ci-dessus est une version non fonctionnel et tres anterieur de mon avancement
-
-Projet imagine en 2015 et commencer en 2024, toujours en cours
-Merci de votre comprehension
+Statut :
+Projet imaginé en 2015, développement commencé en 2024 – toujours en cours.
+Toute copie, reproduction ou utilisation non autorisée est strictement interdite et pourrait entraîner des poursuites judiciaires.
+Le code-source partagé ci-dessus est une version obsolète et non fonctionnelle (ne reflète pas l’avancement actuel).
+Merci de respecter la confidentialité et la propriété intellectuelle de ce projet.
