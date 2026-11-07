@@ -1,0 +1,7 @@
+build/
+node_modules/
+web-ext-artifacts/
+__pycache__/
+*.pyc
+*.xpi
+.DS_Store

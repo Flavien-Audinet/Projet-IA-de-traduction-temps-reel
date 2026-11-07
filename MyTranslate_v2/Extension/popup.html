@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<style>
+  :root { color-scheme: light dark; --accent: #2a78d6; }
+  body { font: 13px -apple-system, system-ui, sans-serif; margin: 0; padding: 14px; width: 280px; }
+  h1 { font-size: 15px; margin: 0 0 10px; display: flex; align-items: center; gap: 8px; }
+  h1 img { width: 20px; height: 20px; }
+  button { width: 100%; padding: 8px; border-radius: 8px; border: 0; background: var(--accent); color: #fff;
+           font: inherit; font-weight: 600; cursor: pointer; }
+  button.secondary { background: transparent; color: var(--accent); border: 1px solid var(--accent); margin-top: 6px; }
+  label { display: flex; gap: 8px; align-items: center; margin: 12px 0 4px; }
+  .muted { color: #888; font-size: 12px; margin-top: 10px; line-height: 1.4; }
+  .status { display: flex; align-items: center; gap: 6px; margin-bottom: 12px; font-size: 12px; }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: #888; flex: none; }
+  .dot.ok { background: #0ca30c; } .dot.ko { background: #d03b3b; }
+</style>
+</head>
+<body>
+  <h1><img src="icons/icon-48.png" alt="">MyTranslate</h1>
+  <div class="status"><span class="dot" id="dot"></span><span id="status">Connexion à l'app…</span></div>
+  <button id="toggle">Traduire cette page</button>
+  <label><input type="checkbox" id="autoAll"> Traduire automatiquement toutes les pages en anglais</label>
+  <label><input type="checkbox" id="never"> Jamais sur <b id="host"></b></label>
+  <p class="muted">Maintiens <b>⌥ Option</b> pour voir le texte d'origine. Raccourci : <b>⌥⇧T</b>.<br>
+     Le moteur (Apple ou IA locale) se choisit dans le menu de l'app MyTranslate.</p>
+  <script src="popup.js"></script>
+</body>
+</html>
