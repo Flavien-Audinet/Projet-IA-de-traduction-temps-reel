@@ -10,6 +10,7 @@ Le texte de l'écran, les pages web et même la voix des vidéos — sans rien e
 ![Swift](https://img.shields.io/badge/SwiftUI-Swift%205-F05138?logo=swift&logoColor=white)
 ![Python](https://img.shields.io/badge/moteurs%20IA-Python%203.12-3776AB?logo=python&logoColor=white)
 ![Firefox](https://img.shields.io/badge/extension-Firefox-FF7139?logo=firefoxbrowser&logoColor=white)
+![Licence](https://img.shields.io/badge/licence-tous%20droits%20réservés-red)
 ![Version](https://img.shields.io/badge/version-2.0.0-2ea44f)
 
 </div>
@@ -240,4 +241,10 @@ MyTranslate_v2/
 
 ---
 
-<div align="center"><sub>SwiftUI · Vision · ScreenCaptureKit · MLX · Opus-MT · Chatterbox — tout tourne sur ton Mac<br/>© Tous droits réservés — voir l'avertissement du <a href="../README.md">dépôt</a></sub></div>
+## 📜 Licence
+
+**Tous droits réservés.** Tu peux consulter, télécharger et utiliser l'app et l'extension gratuitement ; la modification, la revente et la redistribution sont interdites sans accord écrit. Détails : [LICENSE.md](../LICENSE.md).
+
+---
+
+<div align="center"><sub>SwiftUI · Vision · ScreenCaptureKit · MLX · Opus-MT · Chatterbox — tout tourne sur ton Mac</sub></div>

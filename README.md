@@ -2,7 +2,7 @@
 **Reconstruction dynamique des textes & clonage vocal**
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
-[![Licence](https://img.shields.io/badge/Licence-Proprio-red)](https://github.com/Flavien-Audinet/Projet-IA-de-traduction-temps-reel/blob/main/LICENCE)
+[![Licence](https://img.shields.io/badge/Licence-Proprio-red)](https://github.com/Flavien-Audinet/Projet-IA-de-traduction-temps-reel/blob/main/LICENSE.md)
 [![Statut](https://img.shields.io/badge/Statut-En%20Développement-orange)](https://github.com/Flavien-Audinet/Projet-IA-de-traduction-temps-reel)
 [![MyTranslate v2](https://img.shields.io/badge/MyTranslate-v2.0.0-2ea44f)](MyTranslate_v2/README.md)
 
@@ -49,8 +49,9 @@ Idée originale en **2015**, développement actif depuis **2024**.
 
 ## ⚠️ **Avertissement Légal**
 > ❌ **Toute copie, reproduction ou utilisation non autorisée est strictement interdite.**
-> Le code source partagé ici est une **version obsolète et non fonctionnelle** (ne reflète pas l’avancement actuel).
+> Les prototypes 2024 à la racine sont une **version obsolète et non fonctionnelle** ; la version actuelle est [MyTranslate v2](MyTranslate_v2/README.md).
 > **Respectez la propriété intellectuelle** – Contactez-moi pour toute collaboration.
+> Conditions complètes : [LICENSE.md](LICENSE.md) (utilisation autorisée ; modification, revente et redistribution interdites).
 
 ---
 
